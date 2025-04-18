@@ -3,3 +3,10 @@
 *.meta text eol=If
 *.json text eol=If
 *.txt text eol=If
+git lfs track "*.png"
+git lfs track "*.jpg"
+git lfs track "*.psd"
+git lfs track "*.fbx"
+git lfs track "*.mp4"
+git lfs track "*.wav"
+
