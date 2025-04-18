@@ -9,4 +9,4 @@ git lfs track "*.psd"
 git lfs track "*.fbx"
 git lfs track "*.mp4"
 git lfs track "*.wav"
-
+*.tgz filter=lfs diff=lfs merge=lfs -text
