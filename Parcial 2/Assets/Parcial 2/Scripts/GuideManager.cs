@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GuideManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Animator[] animatorsGuia;
+
+    public void ActivarGuia(int index)
     {
-        
+        for (int i = 0; i < animatorsGuia.Length; i++)
+        {
+            animatorsGuia[i].gameObject.SetActive(i == index);
+        }
+
+        if (animatorsGuia[index])
+        {
+            animatorsGuia[index].SetTrigger("Hablar"); // Idle + Talk alternos
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DesactivarTodos()
     {
-        
+        foreach (var a in animatorsGuia)
+        {
+            a.gameObject.SetActive(false);
+        }
     }
 }

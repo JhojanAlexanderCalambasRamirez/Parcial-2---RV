@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject panelTextoInformativo;
+    public TMP_Text contenidoTexto;
+    public ScrollRect scrollRect;
+
+    public void MostrarTexto(string texto)
     {
-        
+        contenidoTexto.text = texto;
+        panelTextoInformativo.SetActive(true);
+        scrollRect.verticalNormalizedPosition = 1f; // Scroll arriba
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OcultarTexto()
     {
-        
+        panelTextoInformativo.SetActive(false);
     }
 }
