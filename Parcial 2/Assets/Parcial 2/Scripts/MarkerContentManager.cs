@@ -7,6 +7,7 @@ public class MarkerContentManager : MonoBehaviour
     public AudioClip[] audios;
     public string[] textosInformativos;
     public GameObject[] guiasVirtuales;
+    public string[] titulosPieza; // Títulos de las piezas
 
     public UIManager uiManager;
     public AudioManager audioManager;
@@ -48,7 +49,7 @@ public class MarkerContentManager : MonoBehaviour
 
     void ActivarContenido()
     {
-        if (modelos3D.Length > markerIndex && modelos3D[markerIndex])
+        if (modelos3D.Length > markerIndex && modelos3D[markerIndex] != null) // Esto es correcto
             modelos3D[markerIndex].SetActive(true);
 
         if (guiasVirtuales.Length > markerIndex && guiasVirtuales[markerIndex])
@@ -56,6 +57,9 @@ public class MarkerContentManager : MonoBehaviour
 
         if (textosInformativos.Length > markerIndex)
             uiManager.MostrarTexto(textosInformativos[markerIndex]);
+
+        if (titulosPieza.Length > markerIndex && !string.IsNullOrEmpty(titulosPieza[markerIndex]))
+            uiManager.MostrarTitulo(titulosPieza[markerIndex]); // Mostrar el título de la pieza
 
         if (audios.Length > markerIndex)
             audioManager.ReproducirAudio(audios[markerIndex]);
@@ -70,6 +74,7 @@ public class MarkerContentManager : MonoBehaviour
             guiasVirtuales[markerIndex].SetActive(false);
 
         uiManager.OcultarTexto();
+        uiManager.OcultarTitulo(); // Ocultar el título
         audioManager.DetenerAudio();
     }
 }

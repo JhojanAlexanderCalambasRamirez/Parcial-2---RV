@@ -1,27 +1,40 @@
 using UnityEngine;
+using UnityEngine.Windows.Speech;
+using System.Collections.Generic;  // Asegúrate de tener esta línea para usar Dictionary
+using System.Linq; // Importa para usar ToArray
 
 public class GuideManager : MonoBehaviour
 {
-    public Animator[] animatorsGuia;
+    private KeywordRecognizer keywordRecognizer;
+    private Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 
-    public void ActivarGuia(int index)
+    void Start()
     {
-        for (int i = 0; i < animatorsGuia.Length; i++)
-        {
-            animatorsGuia[i].gameObject.SetActive(i == index);
-        }
+        keywords.Add("ayuda", ShowHelp);
 
-        if (animatorsGuia[index])
+        // Convertir las claves del diccionario a un arreglo usando ToArray
+        keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
+        keywordRecognizer.OnPhraseRecognized += OnPhraseRecognized;
+        keywordRecognizer.Start();
+    }
+
+    private void OnPhraseRecognized(PhraseRecognizedEventArgs args)
+    {
+        if (keywords.ContainsKey(args.text))
         {
-            animatorsGuia[index].SetTrigger("Hablar"); // Idle + Talk alternos
+            keywords[args.text].Invoke();
         }
     }
 
-    public void DesactivarTodos()
+    private void ShowHelp()
     {
-        foreach (var a in animatorsGuia)
-        {
-            a.gameObject.SetActive(false);
-        }
+        // Aquí se activan las acciones del guía cuando se reconoce "ayuda"
+        Debug.Log("Guía de ayuda activada");
+    }
+
+    void OnDestroy()
+    {
+        keywordRecognizer.Stop();
+        keywordRecognizer.Dispose();
     }
 }

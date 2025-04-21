@@ -2,27 +2,29 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource audioSource;
+    private AudioSource audioSource;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();  // Asume que tienes un AudioSource en el objeto
+    }
+
+    // Método para reproducir el audio
     public void ReproducirAudio(AudioClip clip)
     {
-        if (clip != null)
+        if (audioSource != null && clip != null)
         {
             audioSource.clip = clip;
             audioSource.Play();
         }
     }
 
+    // Método para detener el audio
     public void DetenerAudio()
     {
-        if (audioSource.isPlaying)
+        if (audioSource != null && audioSource.isPlaying)
         {
             audioSource.Stop();
         }
-    }
-
-    public void ReproducirSonidoBoton(AudioClip clip)
-    {
-        audioSource.PlayOneShot(clip);
     }
 }
