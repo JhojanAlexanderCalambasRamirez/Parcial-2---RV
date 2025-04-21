@@ -20,7 +20,8 @@ public class TouchObject : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Moved)
             {
-                Vector3 touchDelta = touch.position - initialTouchPosition;
+                // Convert initialTouchPosition to Vector2 to match touch.position (Vector2)
+                Vector2 touchDelta = touch.position - (Vector2)initialTouchPosition;
                 transform.position = initialObjectPosition + new Vector3(touchDelta.x, touchDelta.y, 0) * 0.01f;
             }
         }
