@@ -568,7 +568,7 @@ MonoBehaviour:
   audios: []
   textosInformativos: []
   titulosPieza: []
-  uiManager: {fileID: 1143094083}
+  uiManager: {fileID: 0}
   audioManager: {fileID: 58752116}
   imageTargets:
   - {fileID: 1727023582}
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 1143094086}
   - component: {fileID: 1143094085}
   - component: {fileID: 1143094084}
-  - component: {fileID: 1143094083}
+  - component: {fileID: 1143094088}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1426,21 +1426,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1143094083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143094082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 237be48049ac03f458c6d6ea04f03a61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelTextoInformativo: {fileID: 0}
-  contenidoTexto: {fileID: 0}
-  tituloPieza: {fileID: 0}
 --- !u!114 &1143094084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,6 +1512,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.0008}
   m_SizeDelta: {x: 740.4, y: 431.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1143094088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143094082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d705d46b4a6a045a0edf87be532791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelRegistro: {fileID: 186330992}
+  panelMuseoInicio: {fileID: 1475811615}
+  panelQuizFinal: {fileID: 1932387224}
+  panelGuiaVirtual: {fileID: 1718322192}
+  botonIniciar: {fileID: 2077045063}
+  botonContinuar: {fileID: 933977202}
 --- !u!1 &1168262580
 GameObject:
   m_ObjectHideFlags: 0
