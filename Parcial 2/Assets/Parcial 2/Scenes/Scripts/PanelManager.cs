@@ -28,7 +28,6 @@ public class PanelManager : MonoBehaviour
     // Referencia a los textos donde mostrar el nombre
     public TMP_Text TMP_Text_ResultadosQuiz;
 
-    // Asegurarse de que solo haya una instancia activa de PanelManager
     void Awake()
     {
         // Si no hay ninguna instancia, asignar esta como la instancia.
@@ -40,9 +39,7 @@ public class PanelManager : MonoBehaviour
         {
             Destroy(gameObject);  // Si ya existe una instancia, destruir el objeto actual.
         }
-
-        // Evitar que se destruya al cargar nuevas escenas
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); // Evitar que se destruya al cargar nuevas escenas
     }
 
     void Start()
@@ -137,7 +134,7 @@ public class PanelManager : MonoBehaviour
         nombreUsuario = inputFieldNombre.text;
         Debug.Log("Nombre del usuario registrado: " + nombreUsuario);
 
-        // Guardar el nombre en PlayerPrefs (persistence)
+        // Guardar el nombre en PlayerPrefs (persistencia)
         PlayerPrefs.SetString("NombreUsuario", nombreUsuario);
         PlayerPrefs.Save();  // Asegurarse de guardar los datos
 
@@ -176,16 +173,18 @@ public class PanelManager : MonoBehaviour
     // Método para reiniciar la experiencia, se ejecuta cuando se termina el quiz
     public void ReiniciarExperiencia()
     {
-        // Reiniciar el estado de la UI
+        // Limpiar los campos y deshabilitar botones
         inputFieldNombre.text = "";  // Limpiar el input de nombre
         buttonRegistrarse.interactable = false;
         buttonIniciarExperiencia.interactable = false;
 
-        // Resetear cualquier otro dato necesario
-        // Por ejemplo: reiniciar el índice de la pieza
-        PlayerPrefs.DeleteKey("NombreUsuario");  // Elimina el nombre guardado de PlayerPrefs
-
         // Mostrar el panel de registro y ocultar los demás
         MostrarPanelRegistro();
+
+        // Eliminar el nombre guardado de PlayerPrefs, reiniciando todo
+        PlayerPrefs.DeleteKey("NombreUsuario");
+
+        // Reiniciar cualquier estado relevante que deba resetearse en el juego
+        // Ejemplo: limpiar los contadores o variables específicas
     }
 }
