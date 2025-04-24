@@ -122,6 +122,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &155408122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155408124}
+  - component: {fileID: 155408123}
+  m_Layer: 0
+  m_Name: ReiniciarTodo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &155408123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155408122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffa973dc8997634e85398ce1fda2c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelRegistro: {fileID: 186330992}
+  panelMuseoInicio: {fileID: 1475811615}
+  panelExperienciaUAO: {fileID: 846126262}
+  panelQuizFinal: {fileID: 1932387224}
+  panelResultados: {fileID: 922564544}
+  buttonRegistrarse: {fileID: 1969800587}
+  buttonIniciarExperiencia: {fileID: 2077045063}
+  buttonContinuarExp: {fileID: 933977202}
+  buttonSiguientePieza: {fileID: 2119932275}
+  buttonRealizarQuiz: {fileID: 288841355}
+  buttonReintentar: {fileID: 1918578780}
+  buttonResultados: {fileID: 1933885116}
+  inputFieldNombre: {fileID: 1556303547}
+--- !u!4 &155408124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155408122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0125191435, y: -0.09453059, z: 0.04221277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186330992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2457,10 @@ MonoBehaviour:
   buttonRegistrarse: {fileID: 1969800587}
   buttonIniciarExperiencia: {fileID: 2077045063}
   buttonContinuarExp: {fileID: 933977202}
+  buttonSiguientePieza: {fileID: 2119932275}
+  buttonRealizarQuiz: {fileID: 288841355}
+  buttonReintentar: {fileID: 1918578780}
+  buttonResultados: {fileID: 1933885116}
   inputFieldNombre: {fileID: 1556303547}
   TMP_Text_ResultadosQuiz: {fileID: 723908480}
 --- !u!1 &1168262580
@@ -3221,6 +3282,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313100791}
   m_CullTransparentMesh: 1
+--- !u!1 &1317745649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317745650}
+  - component: {fileID: 1317745651}
+  m_Layer: 5
+  m_Name: Usuarios
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1317745650
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317745649}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0.001}
+  m_LocalScale: {x: 0.00012372679, y: 0.00012372684, z: 0.00012372684}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1317745651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317745649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee25407eff3a6a4b9a21bd58ee78b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TMP_Text_ResultadosQuiz: {fileID: 723908480}
 --- !u!1001 &1421141857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4163,7 +4273,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718322192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5236,3 +5346,5 @@ SceneRoots:
   - {fileID: 1444961302}
   - {fileID: 1461778520}
   - {fileID: 1067801842}
+  - {fileID: 1317745650}
+  - {fileID: 155408124}

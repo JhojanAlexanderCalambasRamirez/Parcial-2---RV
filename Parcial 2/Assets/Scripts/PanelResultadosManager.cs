@@ -29,8 +29,8 @@ public class PanelResultadosManager : MonoBehaviour
         botonFinalizar.onClick.AddListener(Finalizar);
         botonVolverPanelQuiz.onClick.AddListener(VolverAlPanelQuiz);
 
-        // Obtener el nombre del usuario desde PlayerPrefs si existe
-        nombreUsuario = PlayerPrefs.GetString("NombreUsuario", "Invitado");
+        // Mostrar los usuarios en el ranking desde el archivo JSON
+        UsuarioManager.Instance.CargarUsuarios();
     }
 
     // Este método se llamará desde el script QuizManager.cs para establecer los resultados
@@ -38,7 +38,6 @@ public class PanelResultadosManager : MonoBehaviour
     {
         // Usamos el nombre pasado desde QuizManager en lugar de leerlo de PlayerPrefs nuevamente
         nombreUsuario = nombre;
-
         puntajeFinal = puntaje;
 
         // Mostrar el nombre del usuario y su puntaje final en el texto de resultados

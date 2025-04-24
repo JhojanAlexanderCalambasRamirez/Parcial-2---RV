@@ -4,14 +4,12 @@ using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
-    // Arrays para preguntas y opciones
     public string[] preguntas;
     public string[] opcionesA;
     public string[] opcionesB;
     public string[] opcionesC;
-    public int[] respuestasCorrectas;  // 0 = A, 1 = B, 2 = C
+    public int[] respuestasCorrectas;
 
-    // Referencias a los UI Elements
     public TMP_Text TMP_Text_CantidadPreguntas;
     public TMP_Text TMP_Text_Pregunta;
     public TMP_Text TMP_Text_Opciones;
@@ -22,11 +20,8 @@ public class QuizManager : MonoBehaviour
     public Button botonResultados;
     public Button botonReintentar;
 
-    // Referencias a los Paneles
-    public GameObject PanelQuizFinal;  // Referencia al panel del quiz
-    public GameObject PanelResultados;  // Referencia al panel de resultados
-
-    // Referencia para mostrar los resultados del quiz
+    public GameObject PanelQuizFinal;
+    public GameObject PanelResultados;
     public TMP_Text TMP_Text_ResultadosQuiz;
 
     private int preguntaActual = 0;
@@ -35,14 +30,11 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
-        // Obtener el nombre del usuario desde PlayerPrefs
-        nombreUsuario = PlayerPrefs.GetString("NombreUsuario", "Invitado");  // Cargar el nombre guardado en PlayerPrefs
+        nombreUsuario = PlayerPrefs.GetString("NombreUsuario", "Invitado");
 
-        // Inicializamos el quiz
-        botonResultados.interactable = false;  // Deshabilitar el botón de resultados hasta el final
-        botonReintentar.gameObject.SetActive(false);  // Deshabilitar el botón de reintentar al inicio
+        botonResultados.interactable = false;
+        botonReintentar.gameObject.SetActive(false);
 
-        // Agregar listeners a las opciones
         botonOpcionA.onClick.AddListener(() => ComprobarRespuesta(0));
         botonOpcionB.onClick.AddListener(() => ComprobarRespuesta(1));
         botonOpcionC.onClick.AddListener(() => ComprobarRespuesta(2));
@@ -53,7 +45,6 @@ public class QuizManager : MonoBehaviour
         MostrarPregunta();
     }
 
-    // Mostrar la pregunta y las opciones actuales
     void MostrarPregunta()
     {
         if (preguntaActual < preguntas.Length)
@@ -64,7 +55,6 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    // Comprobar la respuesta seleccionada
     void ComprobarRespuesta(int opcionSeleccionada)
     {
         if (opcionSeleccionada == respuestasCorrectas[preguntaActual])
@@ -72,7 +62,6 @@ public class QuizManager : MonoBehaviour
             respuestasCorrectasCount++;
         }
 
-        // Pasar a la siguiente pregunta
         preguntaActual++;
 
         if (preguntaActual < preguntas.Length)
@@ -81,27 +70,24 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            // Al finalizar las preguntas, habilitar el botón de resultados
             botonResultados.interactable = true;
         }
     }
 
-    // Mostrar los resultados al final
     void MostrarResultados()
     {
-        int puntaje = Mathf.FloorToInt((float)respuestasCorrectasCount / preguntas.Length * 5); // Calificación de 0 a 5
+        int puntaje = Mathf.FloorToInt((float)respuestasCorrectasCount / preguntas.Length * 5);
 
-        // Mostrar el nombre y puntaje del usuario
-        string resultado = $"{nombreUsuario}\nPuntaje: {puntaje}/5";
-        TMP_Text_ResultadosQuiz.text = resultado;  // Aquí asignamos el texto para mostrar el puntaje
+        // Guardamos el puntaje y el nombre en el archivo JSON (instancia del UsuarioManager)
+        UsuarioManager.Instance.GuardarUsuarios(new UsuarioManager.Usuario(nombreUsuario, puntaje));
 
-        // Ocultar el Panel Quiz y mostrar el Panel de Resultados
-        PanelQuizFinal.SetActive(false);  // Asegúrate de tener este objeto en la jerarquía
-        PanelResultados.SetActive(true);  // Asegúrate de tener este objeto en la jerarquía
-        botonReintentar.gameObject.SetActive(true);  // Mostrar el botón de reintentar
+        // Mostrar el panel de resultados
+        TMP_Text_ResultadosQuiz.text = $"{nombreUsuario}\nPuntaje: {puntaje}/5";
+        PanelQuizFinal.SetActive(false);
+        PanelResultados.SetActive(true);
+        botonReintentar.gameObject.SetActive(true);
     }
 
-    // Reiniciar el quiz
     void ReiniciarQuiz()
     {
         preguntaActual = 0;
@@ -111,6 +97,6 @@ public class QuizManager : MonoBehaviour
         botonReintentar.gameObject.SetActive(false);
 
         PanelResultados.SetActive(false);
-        PanelQuizFinal.SetActive(true);  // Volver a mostrar el panel del quiz
+        PanelQuizFinal.SetActive(true);
     }
 }
