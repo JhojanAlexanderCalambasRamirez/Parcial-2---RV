@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Parcial 2/Scenes/Parcial 2 escena principal.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Parcial-2/Scenes/Parcial 2 - INICIO APP.unity
+    guid: 264c09701523b704599b52d64802b762
   - enabled: 1
     path: Assets/Parcial-2/Scenes/Parcial 2 - Final.unity
     guid: 1aae74115519e2f4a9ff48c29cb996bf
