@@ -71,14 +71,10 @@ Demuestra lo que aprendiste respondiendo un quiz interactivo.
 
 ¿Cómo navegar?
 • Lee la pregunta y selecciona tu respuesta (A, B o C).
-• Al final, se activará el botón 'Ver resultado'.
-
-Recuerda:
-Puedes repetir el quiz si lo deseas, ¡cada intento te ayuda a aprender más!";
+• Al final, se activará el botón 'Ver resultado'.";
 
         helpMessages[PanelType.Resultados] =
 @" ¿Cómo navegar?
-• Toca 'Repetir' si quieres intentarlo de nuevo.
 • Toca la x para volver al inicio y registrar un nuevo usuario.
 
 Recuerda:
@@ -121,6 +117,9 @@ Tu huella ya quedó en esta experiencia. ¡Gracias por hacer parte de la memoria
     {
         if (helpPanel != null)
             helpPanel.SetActive(false);
+
+        if (audioSource != null)
+            audioSource.Stop();
     }
 
     private PanelType DetectarPanelActivo()

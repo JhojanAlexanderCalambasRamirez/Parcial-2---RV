@@ -44,7 +44,7 @@ public class PanelQuizFinal : MonoBehaviour
     {
         TMP_Text_CantidadPreguntas.text = "Pregunta " + (preguntaActual + 1) + " de " + Preguntas.Length;
         TMP_Text_Pregunta.text = Preguntas[preguntaActual];
-        TMP_Text_Opciones.text = "A. " + OpcionesA[preguntaActual] + "\nB. " + OpcionesB[preguntaActual] + "\nC. " + OpcionesC[preguntaActual];
+        TMP_Text_Opciones.text = "A. " + OpcionesA[preguntaActual] + "\n \n B. " + OpcionesB[preguntaActual] + "\n \n C. " + OpcionesC[preguntaActual];
 
         BotonOpcionA.interactable = true;
         BotonOpcionB.interactable = true;
