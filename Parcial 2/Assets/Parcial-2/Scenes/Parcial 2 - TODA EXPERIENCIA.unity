@@ -233,8 +233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &96472498
 GameObject:
@@ -456,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &179822380
 GameObject:
@@ -784,8 +784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &227123131
 GameObject:
@@ -1363,8 +1363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1001 &313883162
 PrefabInstance:
@@ -1477,8 +1477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1001 &416610265
 PrefabInstance:
@@ -2229,8 +2229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &542842624
 GameObject:
@@ -2414,11 +2414,16 @@ PrefabInstance:
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
@@ -2428,7 +2433,17 @@ PrefabInstance:
       objectReference: {fileID: 1009913556}
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1710307289}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
@@ -2439,6 +2454,11 @@ PrefabInstance:
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
@@ -2953,7 +2973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0007810988}
+  m_AnchoredPosition: {x: 0, y: 0.0007846042}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &769297730
@@ -4161,8 +4181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &1067801839
 GameObject:
@@ -5056,7 +5076,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1660142535}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999977
+  m_Size: 0.9999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6266,8 +6286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1 &1461778517
 GameObject:
@@ -7940,8 +7960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!114 &3495506716199588862
 MonoBehaviour:
@@ -7955,8 +7975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!114 &3495506716199588863
 MonoBehaviour:
@@ -7970,8 +7990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crecimientoEscala: 2.42
-  velocidadPulso: 8.22
+  crecimientoEscala: 1.2
+  velocidadPulso: 10
   pulsoContinuo: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

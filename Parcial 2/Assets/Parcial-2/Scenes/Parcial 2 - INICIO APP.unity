@@ -122,6 +122,101 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &43780630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43780633}
+  - component: {fileID: 43780632}
+  - component: {fileID: 43780631}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &43780631
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43780630}
+  m_Enabled: 1
+--- !u!20 &43780632
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43780630}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &43780633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43780630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0036839303, y: -0.10447887, z: 0.0245077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Juan-Manuel
 --- !u!1 &179822380
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +244,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 758310a572d1ca64c929ec8a78da3e77, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 053b4d43c40f2364d905fae2cce71110, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.592
   m_Pitch: 1
@@ -256,6 +351,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1099586578}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &258027985
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,12 +480,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> Juan-Manuel
 --- !u!224 &528110101 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6530001109725889971, guid: 10da5e5c7171264429e754224fc716c6,
     type: 3}
   m_PrefabInstance: {fileID: 1358403700}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &594015708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -504,6 +603,8 @@ MonoBehaviour:
   crecimientoEscala: 1.2
   velocidadPulso: 15
   pulsoContinuo: 1
+=======
+>>>>>>> Juan-Manuel
 --- !u!1 &660047924
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +637,6 @@ RectTransform:
   m_Children:
   - {fileID: 201582374}
   - {fileID: 528110101}
-  - {fileID: 1844702945}
   m_Father: {fileID: 1337880556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -785,6 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a57548daf64b2f4f85181e5f1330320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   crecimientoEscala: 1.2
   velocidadPulso: 15
   pulsoContinuo: 1
@@ -916,6 +1017,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+  crecimientoEscala: 1.1
+  velocidadPulso: 10.28
+  pulsoContinuo: 1
+>>>>>>> Juan-Manuel
 --- !u!1 &1067801839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1332,11 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
+<<<<<<< HEAD
   m_Camera: {fileID: 751725348}
+=======
+  m_Camera: {fileID: 43780632}
+>>>>>>> Juan-Manuel
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1290,8 +1400,6 @@ Transform:
   m_Children:
   - {fileID: 179822382}
   - {fileID: 1330707639}
-  - {fileID: 1009913555}
-  - {fileID: 258027986}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288649826
@@ -1561,6 +1669,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_PlayAllExperiencia
       objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1330707640}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1358403702}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadSceneByIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ESCENAS, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577096368994156889, guid: 10da5e5c7171264429e754224fc716c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4883141781898902555, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
       propertyPath: m_text
@@ -1664,7 +1837,7 @@ PrefabInstance:
     - target: {fileID: 6530001109725889971, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -118.410866
+      value: -178
       objectReference: {fileID: 0}
     - target: {fileID: 6530001109725889971, guid: 10da5e5c7171264429e754224fc716c6,
         type: 3}
@@ -1688,6 +1861,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 981752042}
+<<<<<<< HEAD
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
 --- !u!1001 &1844702944
@@ -1827,22 +2001,42 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6530001109725889971, guid: 10da5e5c7171264429e754224fc716c6,
+=======
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1238763194503334741, guid: 10da5e5c7171264429e754224fc716c6,
+>>>>>>> Juan-Manuel
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 594015709}
-    m_AddedComponents: []
+      addedObject: {fileID: 1358403702}
   m_SourcePrefab: {fileID: 100100000, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
---- !u!224 &1844702945 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6530001109725889971, guid: 10da5e5c7171264429e754224fc716c6,
+--- !u!1 &1358403701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1238763194503334741, guid: 10da5e5c7171264429e754224fc716c6,
     type: 3}
-  m_PrefabInstance: {fileID: 1844702944}
+  m_PrefabInstance: {fileID: 1358403700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1358403702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358403701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7376199e5a895284ab565ce405e706a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndexToLoad: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1288649828}
+<<<<<<< HEAD
+=======
+  - {fileID: 43780633}
+>>>>>>> Juan-Manuel
   - {fileID: 1143094087}
   - {fileID: 1067801842}
   - {fileID: 751725349}
