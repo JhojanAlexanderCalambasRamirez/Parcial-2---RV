@@ -15,6 +15,14 @@
         {
             "nombreUsuario": "lupita",
             "puntaje": 1
+        },
+        {
+            "nombreUsuario": "minecraft",
+            "puntaje": 2
+        },
+        {
+            "nombreUsuario": "micaela",
+            "puntaje": 2
         }
     ]
 }
