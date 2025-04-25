@@ -213,6 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &81901012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6120498779971352916, guid: 28987e5d75aac4f4798c40b7b60fd4ae,
@@ -234,6 +235,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -437,6 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &118073153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5001191179329461678, guid: dc35cc38478bff64aba62fa874ffff49,
@@ -458,6 +462,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -761,6 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &218768301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4072138484939855888, guid: 63260824cebb3cb4cab98299be3c4fda,
@@ -782,6 +789,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -1276,6 +1285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &299720697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6543285890972587308, guid: 23f3bb7a27abee94880e7b872984936b,
@@ -1297,6 +1307,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -1392,6 +1404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &313883164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4974260290911322619, guid: e0489df3ffc109f48b8d7621cb22477d,
@@ -1413,6 +1426,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -2150,6 +2165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &426436115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5001191179329461678, guid: dc35cc38478bff64aba62fa874ffff49,
@@ -2171,6 +2187,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -2933,7 +2951,11 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.0005899027}
+=======
+  m_AnchoredPosition: {x: 0, y: 0.0030602152}
+>>>>>>> parent of aa13e7e (commits)
 =======
   m_AnchoredPosition: {x: 0, y: 0.0030602152}
 >>>>>>> parent of aa13e7e (commits)
@@ -4133,6 +4155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1042790794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7324457123486809978, guid: c21e38ba610caa14597ca46aff66c065,
@@ -4154,6 +4177,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -4317,6 +4342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1109516705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8586354556731828040, guid: f1b871483454f7e48b75d2d503293516,
@@ -4338,6 +4364,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -6324,6 +6352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1457525774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8224460354738587321, guid: 30e77f2ecf99d2b40bcdc8ca3500f94a,
@@ -6345,6 +6374,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
@@ -7979,6 +8010,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 532c8b2a39630e94b8e4fc45c7d93dc2, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &3495506716199588858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782666950303130935, guid: 532c8b2a39630e94b8e4fc45c7d93dc2,
@@ -8042,6 +8074,8 @@ MonoBehaviour:
   crecimientoEscala: 1.5
   velocidadPulso: 32
   pulsoContinuo: 1
+=======
+>>>>>>> parent of aa13e7e (commits)
 =======
 >>>>>>> parent of aa13e7e (commits)
 =======
