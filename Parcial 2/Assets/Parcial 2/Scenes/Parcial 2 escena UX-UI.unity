@@ -3014,13 +3014,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nEste recorrido virtual te invita a sumergirte en la historia milenaria
-    de los pueblos originarios del suroccidente colombiano. A trav\xE9s de piezas
-    arqueol\xF3gicas \xFAnicas\n\n \u2014herramientas, vasijas, adornos y representaciones
-    humanas y animales.\n\n\u2014 conectamos con las culturas Tumaco, Nari\xF1o,
-    Calima, Yotoco y Quimbaya.\nDesde las profundidades de la tierra, estas huellas
-    nos ense\xF1an sobre sostenibilidad, identidad y v\xEDnculo con el entorno.\n\nExplora, 
-    observa, reflexiona... y d\xE9jate guiar por la memoria que habita en cada objeto."
+  m_text: "\U0001F33F Bienvenidos a \u201CTras las huellas de las memorias del territorio\u201D
+    \U0001F33F\r\n\r\nTe invitamos a un recorrido virtual por las memorias vivas
+    de las culturas ancestrales Tumaco, Nari\xF1o, Calima y Quimbaya. A trav\xE9s
+    de piezas arqueol\xF3gicas, sonidos, objetos interactivos y preguntas, descubrir\xE1s
+    c\xF3mo nuestros ancestros moldearon con sabidur\xEDa su entorno y dejaron una
+    huella sostenible que inspira el presente.\r\n\r\nEste museo digital nace desde
+    el coraz\xF3n del Campus del Valle de Lili, conectando el pasado con la Universidad
+    Aut\xF3noma de Occidente, y contigo.\r\n\r\n\xA1Explora, aprende y deja tambi\xE9n
+    tu huella!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a8028eaa39d63cf42ab298ada4021290, type: 2}
   m_sharedMaterial: {fileID: 1622281326455605443, guid: a8028eaa39d63cf42ab298ada4021290,
