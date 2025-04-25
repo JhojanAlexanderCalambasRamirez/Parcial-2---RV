@@ -1,8 +1,8 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
-    public static PanelManager Instance;  // Agregar la propiedad estática Instance
+    public static PanelManager Instance;  // Agregar la propiedad estï¿½tica Instance
     public GameObject panelRegistro;
     public GameObject panelMuseoInicio;
     public GameObject panelExperienciaUAO;
@@ -27,7 +27,7 @@ public class PanelManager : MonoBehaviour
         MostrarPanel(panelRegistro);
     }
 
-    // Función para cambiar entre paneles
+    // Funciï¿½n para cambiar entre paneles
     public void MostrarPanel(GameObject panel)
     {
         // Desactivar todos los paneles
@@ -41,7 +41,7 @@ public class PanelManager : MonoBehaviour
         panel.SetActive(true);
     }
 
-    // Función para cambiar al PanelRegistro y resetear el estado
+    // Funciï¿½n para cambiar al PanelRegistro y resetear el estado
     public void IrAlPanelRegistro()
     {
         // Resetear variables de los otros paneles
@@ -67,25 +67,25 @@ public class PanelManager : MonoBehaviour
         piezaPanel.ResetearEstado();
     }
 
-    // Función para cambiar al PanelMuseoInicio
+    // Funciï¿½n para cambiar al PanelMuseoInicio
     public void IrAlPanelMuseoInicio()
     {
         MostrarPanel(panelMuseoInicio);
     }
 
-    // Función para cambiar al PanelExperienciaUAO
+    // Funciï¿½n para cambiar al PanelExperienciaUAO
     public void IrAlPanelExperienciaUAO()
     {
         MostrarPanel(panelExperienciaUAO);
     }
 
-    // Función para cambiar al PanelQuizFinal
+    // Funciï¿½n para cambiar al PanelQuizFinal
     public void IrAlPanelQuizFinal()
     {
         MostrarPanel(panelQuizFinal);
     }
 
-    // Función para cambiar al PanelResultados
+    // Funciï¿½n para cambiar al PanelResultados
     public void IrAlPanelResultados()
     {
         MostrarPanel(panelResultados);
