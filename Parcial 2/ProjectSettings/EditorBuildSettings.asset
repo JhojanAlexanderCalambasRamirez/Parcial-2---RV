@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Parcial-2/Scenes/Parcial 2 - INICIO APP.unity
     guid: 264c09701523b704599b52d64802b762
   - enabled: 1
-    path: Assets/Parcial-2/Scenes/Parcial 2 - Final.unity
+    path: Assets/Parcial-2/Scenes/Parcial 2 - TODA EXPERIENCIA.unity
     guid: 1aae74115519e2f4a9ff48c29cb996bf
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: cec2e609f601aa24185af77c2dee626a,
