@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -18,14 +18,16 @@ public class UsuarioList
 public class UsuarioManager : MonoBehaviour
 {
     public static UsuarioManager Instance;
-    public static string nombreUsuarioActual;  // Nueva variable estática para almacenar el nombre del usuario actual
-    private string filePath = "Assets/Parcial-2/JSON/usuarios.json";
+    public static string nombreUsuarioActual;
+    private string filePath;
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            filePath = Path.Combine(Application.persistentDataPath, "usuarios.json"); // ðŸ”¥ ahora sÃ­ correcto para Android
+            Debug.Log("Ruta JSON: " + filePath);
         }
         else
         {
@@ -35,11 +37,10 @@ public class UsuarioManager : MonoBehaviour
 
     public void GuardarUsuario(string nombreUsuario, int puntaje)
     {
-        nombreUsuarioActual = nombreUsuario;  // Guardamos el nombre del usuario actual
+        nombreUsuarioActual = nombreUsuario;
         Usuario nuevoUsuario = new Usuario { nombreUsuario = nombreUsuario, puntaje = puntaje };
         UsuarioList usuarioList = CargarUsuarios();
 
-        // Verificar si el usuario ya existe, si es así, actualizamos su puntaje
         bool usuarioExistente = false;
         foreach (Usuario usuario in usuarioList.usuarios)
         {
@@ -51,7 +52,6 @@ public class UsuarioManager : MonoBehaviour
             }
         }
 
-        // Si no existe, lo agregamos como nuevo usuario
         if (!usuarioExistente)
         {
             usuarioList.usuarios.Add(nuevoUsuario);
