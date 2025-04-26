@@ -1229,7 +1229,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1648,7 +1649,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2591,7 +2593,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 6.5301
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2782,7 +2785,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2973,7 +2977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0007846042}
+  m_AnchoredPosition: {x: 0, y: -0.00023841858}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &769297730
@@ -3605,7 +3609,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3685,18 +3690,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bienvenidos a \u201CTras las huellas de las memorias del territorio\u201D
-    \U0001F33F\r\n\r\nTe invitamos a un recorrido virtual por las memorias vivas
-    de las culturas ancestrales Tumaco, Nari\xF1o, Calima y Quimbaya. A trav\xE9s
-    de piezas arqueol\xF3gicas, sonidos, objetos interactivos y preguntas, descubrir\xE1s
-    c\xF3mo nuestros ancestros moldearon con sabidur\xEDa su entorno y dejaron una
-    huella sostenible que inspira el presente.\r\n\r\nEste museo digital nace desde
-    el coraz\xF3n del Campus del Valle de Lili, conectando el pasado con la Universidad
-    Aut\xF3noma de Occidente, y contigo.\r\n\r\n\xA1Explora, aprende y deja tambi\xE9n
-    tu huella!\r\n"
+  m_text: "Bienvenidos a \u201CTras las huellas de las memorias del territorio\u201D\n\r\nTe
+    invitamos a un recorrido virtual por las memorias vivas de las culturas ancestrales
+    Tumaco, Narino, Calima y Quimbaya. A trav\xE9s de piezas arqueologicas, sonidos,
+    objetos interactivos y preguntas, descubriras c\xF3mo nuestros ancestros moldearon
+    con sabidur\xEDa su entorno y dejaron una huella sostenible que inspira el presente.\r\n\r\nEste
+    museo digital nace desde el coraz\xF3n del Campus del Valle de Lili, conectando
+    el pasado con la Universidad Aut\xF3noma de Occidente, y contigo.\r\n\r\n\xA1Explora,
+    aprende y deja tambi\xE9n tu huella!\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a8028eaa39d63cf42ab298ada4021290, type: 2}
-  m_sharedMaterial: {fileID: 1622281326455605443, guid: a8028eaa39d63cf42ab298ada4021290,
+  m_fontAsset: {fileID: 11400000, guid: 27ec0fccfacea224f94fee6ae4f30af0, type: 2}
+  m_sharedMaterial: {fileID: -3329987333582337400, guid: 27ec0fccfacea224f94fee6ae4f30af0,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5075,8 +5079,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660142536}
   m_HandleRect: {fileID: 1660142535}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999976
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5302,7 +5306,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7425,7 +7430,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7774,7 +7780,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167912086118820596, guid: 10da5e5c7171264429e754224fc716c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7913,7 +7920,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6567202499029687806, guid: 532c8b2a39630e94b8e4fc45c7d93dc2, type: 3}
+    - {fileID: 4057279676842335369, guid: 532c8b2a39630e94b8e4fc45c7d93dc2, type: 3}
+    - {fileID: 5819446396079659951, guid: 532c8b2a39630e94b8e4fc45c7d93dc2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

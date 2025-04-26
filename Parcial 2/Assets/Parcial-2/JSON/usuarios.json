@@ -23,6 +23,22 @@
         {
             "nombreUsuario": "micaela",
             "puntaje": 2
+        },
+        {
+            "nombreUsuario": "kilo",
+            "puntaje": 4
+        },
+        {
+            "nombreUsuario": "mini",
+            "puntaje": 0
+        },
+        {
+            "nombreUsuario": "loli",
+            "puntaje": 0
+        },
+        {
+            "nombreUsuario": "miky",
+            "puntaje": 0
         }
     ]
 }
